@@ -63,7 +63,7 @@ def acc(f, v):
     return A
 
 
-num_points = 30 # dimension of both the b_points and v_points array
+num_points = 50 # dimension of both the b_points and v_points array
 b_points = r_schwarz * np.linspace(1, 100, num_points, endpoint=True)
 v_points = c * np.linspace(1e-8, .9, num_points, endpoint=True)
 
@@ -162,6 +162,13 @@ D = params[3]
 E = params[4]
 F = params[5]
 
-print(params)
+print("Value of N:", num_points)
+print("A =", A)
+print("B =", B)
+print("C =", C)
+print("D =", D)
+print("E =", E)
+print("F =", F)
 
 # The differential cross section equation can be found on GitHub
+
